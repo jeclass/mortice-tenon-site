@@ -212,7 +212,7 @@ def build_og():
     W, H = 1200, 630
     im = Image.new("RGB", (W, H), CREAM)
     d = ImageDraw.Draw(im)
-    d.rectangle([0, H - 120, W, H], fill=(87, 117, 102))  # sage-deep band
+    d.rectangle([0, H - 120, W, H], fill=(83, 112, 95))  # sage-deep band (#53705f)
     tmp = pathlib.Path("/tmp/mtsite-icons")
     html = tmp / "logo.html"
     html.write_text(f"<html><body style='margin:0;background:#fbf7ee'><img src='{OUT / 'img' / 'logo.svg'}' "
